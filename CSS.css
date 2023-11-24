@@ -1,0 +1,26 @@
+#header {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 100px;
+    color: white;
+    background-color: black;
+}
+#target {
+    background-color: yellow;
+    width: 30px;
+    height: 28px;
+    position: absolute;
+}
+.score {
+   color: white;
+   position: absolute;
+   font-family: Arial;
+}
+#black {
+  color: white;
+  font-family: Arial;
+}
