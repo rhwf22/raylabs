@@ -5,49 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aim Trainer</title>
 
+    <script src="JavaScript.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body style="background-color:black;">
+<body style="background-color:black;" onload="load()">
 
     <button id="header">Click to start</button>
-
-    <script>
-    $(document).ready(function() { 
-    $("#header").click(function() { 
-        $(this).hide(); 
-        document.querySelector('.score').innerHTML = 0;
-    }); 
-    }); 
-    </script>
     
     <button onclick="correct()"	 id="target"></button>
 
-    <script>
-        var w = window.innerWidth-100;
-        var h = window.innerHeight-95;
-        var b = document.querySelector("#target");
-        b.addEventListener("click",change);
-        function change()
-        {
-            var i = Math.floor(Math.random()*w)+1;
-            var j = Math.floor(Math.random()*h)+1;
-            b.style.left = i+"px";
-            b.style.top = j+"px";
-        }
-    </script>
-    
-    <script>
-        function correct() {
-          let score = parseInt(document.querySelector('.score').innerHTML);
-          document.querySelector('.score').innerHTML = score + 1;
-        }
-
-        function incorrect() {
-          let score = parseInt(document.querySelector('.score').innerHTML);
-          document.querySelector('.score').innerHTML = score - 1;
-        }
-    </script>
     <p id="black">Score: <span class="score">0</span></p>
+    
+    <progress value="0" max="10" id="progressBar"></progress>
 </body>
 </html>
