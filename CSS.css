@@ -16,11 +16,16 @@
     position: absolute;
 }
 .score {
-   color: white;
-   position: absolute;
-   font-family: Arial;
+    color: white;
+    position: absolute;
+    font-family: Arial;
 }
 #black {
-  color: white;
-  font-family: Arial;
+    color: white;
+    font-family: Arial;
+}
+#progressBar {
+    position: relative;
+    left: 45%;
+    top: 0%;
 }
