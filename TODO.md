@@ -1,0 +1,4 @@
+- fix the website URL?
+  - website currently deployed on the URL https://rhwf22.github.io/raylabs.github.io/
+- properly setup the local repo on the local computer
+- add code on index.html webpage to redirect traffic to the aimlabs webpage
