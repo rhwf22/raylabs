@@ -24,7 +24,7 @@ function load(){
   startBtn.onclick = function(){
     startBtn.style.display = "none"
     document.querySelector('.score').innerHTML = 0
-    timeleft = 10
+    timeleft = 11
   }
 
 }
@@ -46,11 +46,11 @@ function change()
 //   }); 
 //   }); 
 
-var timeleft = 10;
+var timeleft = 11;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
   }
-  document.getElementById("progressBar").value = 10 - timeleft;
+  document.getElementById("progressBar").value = 11 - timeleft;
   timeleft -= 1;
-}, 1000);
+}, 1100);
