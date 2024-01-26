@@ -29,3 +29,27 @@
     left: 45%;
     top: 0%;
 }
+#widthSlider {
+    position: absolute;
+    right: 1%;
+    top: 0%;
+}
+#heightSlider {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+#blackHeight  {
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    right: 10%;
+    top: 5%;
+}
+#blackWidth {
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    right: 10%;
+    top: 0%
+}
