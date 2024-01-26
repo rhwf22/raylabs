@@ -13,10 +13,13 @@
 
     <button id="header">Click to start</button>
     
-    <button onclick="correct()"	 id="target"></button>
+    <button onclick="correct()"	 id="target"></button>  
 
     <p id="black">Score: <span class="score">0</span></p>
     
     <progress value="0" max="11" id="progressBar"></progress>
+
+	<div id="blackWidth">Width: </div><input type="range" id="widthSlider" min="0" max="500" value="30">
+	<div id="blackHeight">Height: </div><input type="range" id="heightSlider" min="0" max="500" value="28">
 </body>
 </html>
