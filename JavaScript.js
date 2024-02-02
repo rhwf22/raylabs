@@ -1,3 +1,20 @@
+window.onload = function() {
+	var button = document.getElementById("target");
+  var valueHeight = document.getElementById("heightSlider");
+  var valueWidth = document.getElementById("widthSlider");
+  const changeHeight = document.getElementById("heightSlider");
+  const changeWidth = document.getElementById("widthSlider");
+
+	changeWidth.addEventListener = ("change", () => {
+    console.log(valueWidth.value)
+    button.style.width = valueWidth.value + "px";
+  });
+	
+	changeHeight.oninput = function() {
+		button.style.height = this.value + "px";
+	}
+}
+
 function correct() {
   if (timeleft <= 0) {
     return
@@ -27,6 +44,23 @@ function load(){
     timeleft = 11
   }
 
+  var button = document.getElementById("target");
+  var valueHeight = document.getElementById("heightSlider");
+  var valueWidth = document.getElementById("widthSlider");
+  const changeHeight = document.getElementById("heightSlider");
+  const changeWidth = document.getElementById("widthSlider");
+
+  changeWidth.oninput = function() {
+    button.style.width = this.value + "px";
+  }
+	// changeWidth.addEventListener = ("change", () => {
+  //   console.log(valueWidth.value)
+  //   button.style.width = valueWidth.value + "px";
+  // });
+	
+	changeHeight.oninput = function() {
+		button.style.height = this.value + "px";
+	}
 }
 
 function change()
