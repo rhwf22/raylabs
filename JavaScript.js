@@ -1,3 +1,5 @@
+var toggleCircle = true
+
 window.onload = function() {
 	var button = document.getElementById("target");
   var valueHeight = document.getElementById("heightSlider");
@@ -61,6 +63,20 @@ function load(){
 	changeHeight.oninput = function() {
 		button.style.height = this.value + "px";
 	}
+
+  var togglecircle = document.getElementById("toggleCircle");
+
+  togglecircle.addEventListener("click", ()=>{
+    toggleCircle = !toggleCircle
+    if (toggleCircle == true) {
+      button.className = "circleTarget";
+      togglecircle.className = "";
+    }
+    else {
+      button.className = "";
+      togglecircle.className = "circleTarget";
+    }
+  })
 }
 
 function change()
