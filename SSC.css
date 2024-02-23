@@ -1,0 +1,12 @@
+#scentence {
+    position: absolute;
+    top: 50%;
+    width: 95vw;
+    height: 50vh;
+    text-align: center;
+    font-size: larger;
+}
+#wpm {
+    position: absolute;
+    right: 50%;
+}
