@@ -10,3 +10,12 @@
     position: absolute;
     right: 50%;
 }
+#characters {
+    position: absolute;
+}
+#scentencetyped {
+    position: absolute;
+    top: 60%;
+    right: 42%;
+    text-align: center;
+}
