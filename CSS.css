@@ -7,6 +7,7 @@
     left: 0%;
     font-size: 100px;
     color: white;
+    cursor: crosshair;
     background-color: black;
 }
 #target {
@@ -14,6 +15,7 @@
     width: 30px;
     height: 28px;
     position: absolute;
+    cursor: crosshair;
 }
 .circleTarget {
     border-radius: 50%;
